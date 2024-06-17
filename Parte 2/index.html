@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercadinho Digital - Painel Administrativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="form-login">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <table id="table-produtos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-produtos">
+                    <!-- produtos serão listados aqui -->
+                </tbody>
+            </table>
+            <button id="btn-add-produto">Adicionar Produto</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
